@@ -1,4 +1,9 @@
 h1 {
+  font-family: 'Lexend', sans-serif;
   color: red;
 }
-  
+
+h2 {
+  font-family: 'Lexend', sans-serif;
+  color: blue;
+}  
