@@ -7,7 +7,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 <style>
-div {
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: red;
+  padding: 10px;
+}
+.grid-item {
+  background-color: #ffffff;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+h4 {
   background-color: #d3d3d3;
   width: 300px;
   border: 15px solid red; 
@@ -25,28 +38,39 @@ body {
 <body>
 
 <p>
-<h2>Sports guides for the important sports (those that you should play).</h2>
+<h1>Sports guides for the important sports (those that you should play).</h1>
 </p>
 
-<!-- Guide Links --!>
+<div class="grid-container">
+  <div class="grid-item"><img src="football.png" width="300">
+  <br>
+  <a href="https://www.wikihow.com/Play-American-Football"target="_blank">Football (American)</a></div>
 
-<ul>
-  <li><h2><a href="https://www.wikihow.com/Play-American-Football"target="_blank">Football (American)</a></h2></li>
-  <li><h2><a href="https://www.youtube.com/watch?v=oyjYgmsM00Q"target="_blank">Basketball</a></h2></li>
-  <li><h2><a href="https://www.youtube.com/watch?v=QAP0FEqFEQA"target="_blank">Bowling</a></h2></li>
-  <li><h2><a href="https://www.wikihow.com/Play-Tennis"target="_blank">Tennis</a></h2></li>
-  <li><h2><a href="https://www.youtube.com/watch?v=JMwKyO4-WYU"target="_blank">Pickleball</a></h2></li>
-  <li><h2><a href="https://www.wikihow.com/Play-Golf"target="_blank">Golf</a></h2></li>
-</ul>
+  <div class="grid-item"><img src="Basketball.png" width="220">
+  <br>
+  <a href="https://www.youtube.com/watch?v=oyjYgmsM00Q"target="_blank">Basketball</a></div>
 
-<!-- Back to main page --!>
+  <div class="grid-item"><img src="bowling.png" width="300">
+  <br>
+  <a href="https://www.youtube.com/watch?v=QAP0FEqFEQA"target="_blank">Bowling</a></div>  
 
-<p><h2><a href ="file:///C:/Users/danie/OneDrive/Documents/_School/WebDev/site/index.html">Back</a> to main page.</h2></p>
+  <div class="grid-item"><img src="tennis.png" width="300">
+  <br>
+  <a href="https://www.wikihow.com/Play-Tennis"target="_blank">Tennis</a></div>
 
-<br> <br> <br>
+  <div class="grid-item"><img src="pickleball.jpg" width="225">
+  <br>
+  <a href="https://www.youtube.com/watch?v=JMwKyO4-WYU"target="_blank">Pickleball</a></div>
 
-<div>If for some reason you want to view another sport, click <a href ="https://www.rookieroad.com/sports/alphabetical-sports-list-a-z/
-"target="blank"> here</a></div>
+  <div class="grid-item"><img src="golf.png" width="210">
+  <br>
+  <a href="https://www.wikihow.com/Play-Golf"target="_blank">Golf</a></div>   
+</div>
+
+<p><h4>If for some reason you want to view another sport, click <a href ="https://www.rookieroad.com/sports/alphabetical-sports-list-a-z/
+"target="blank"> here</a></h4></p>
+
+<br>
 
 <h3>If you wouldn't mind, please put in your favorite sport (of the 6 above of course) as well as your name.
  We are trying to understand which sport our viewers are interested in most.</h3>
@@ -60,6 +84,8 @@ body {
   <input type="text" id="lname" name="lname" value=""<br><br>
   <input type="submit" value="Submit">
 </form>
-   
+
+<p><h2><a href ="../index.html">Back</a> to main page.</h2></p>
+
 </body>
 </html>
